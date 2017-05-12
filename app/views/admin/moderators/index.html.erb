@@ -2,6 +2,6 @@
 
 <ul>
 	<% @moderators.each do |mod| %>
-		<li><%= mod.fullname %> </li>
+		<li><%= mod.fullname %> | <%= mod.username %> | <%= link_to "Edit", edit_admin_moderator_path(mod) %></li>
 	<% end %>
 </ul>
